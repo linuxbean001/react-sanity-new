@@ -78,7 +78,7 @@ function BlogDetail() {
           <div className="blog-post">
             <h2 className= "text-capitalize">{postData.title}</h2>
                 <p className="lastupdate">
-                <Link to="#"><i className="fa fa-user-circle-o"></i> {postData.name}</Link>
+                <Link to="#"><i className="fa fa-user"></i> {postData.name}</Link>
                 <i className="fa fa-calendar"></i> {Moment(postData.publishedAt).format('MMM DD, YYYY')}
                 <i className="fa fa-hashtag"></i> {postData.categories}
                  <span className="comments-type">

@@ -118,12 +118,19 @@ function SideBlog() {
           ))}
         </ul>
       </div>
-      <div className="topRightCate tags">
+      {(location.pathname === "/blog-detail/"+slug)?
+        (<div className="topRightCate tags">
         <h3>Tags</h3>
         {allTags && allTags.tags.map((tags, index) => (
           <Link key={index} to="#">{tags}</Link>
         ))}
-      </div>
+        </div>)
+        : (<div className="topRightCate tags">
+        <h3>Tags</h3>
+        {allTags && allTags.tags.map((tags, index) => (
+          <Link key={index} to="#">{tags}</Link>
+        ))}
+      </div>)} 
       <div className="topRightCate folloemail">
         <h3>The Arcadea Brief</h3>
         <p>Join the Arcadea Brief, where we share our latest ideas and lessons learned, straight to your inbox.</p>
