@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import sanityClient from "../client.js";
 import BlockContent from "@sanity/block-content-to-react";
